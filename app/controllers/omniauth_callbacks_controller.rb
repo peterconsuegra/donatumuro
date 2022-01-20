@@ -21,7 +21,7 @@ class OmniauthCallbacksController < ApplicationController
      
     end
     
-    redirect_to "/", notice: "Succesully connected your account"
+    redirect_to "/", notice: "Gracias por donar tu muro por el cambio!"
     
   end
   

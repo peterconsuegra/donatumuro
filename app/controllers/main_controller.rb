@@ -1,9 +1,9 @@
 class MainController < ApplicationController
+  
+  layout "blank"
 
     def index
-        if session[:user_id]
-            @user = User.find_by(id: session[:user_id])
-        end
+      @twitter_count = TwitterAccount.all.count
     end
 
 end
