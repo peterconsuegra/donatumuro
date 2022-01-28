@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Creative - Start Bootstrap Theme</title>
+        <title>DONA TU MURO POR EL CAMBIO</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -36,6 +36,7 @@
 						
                        
 						<%=button_to "DONA TU MURO DE TWITTER", "/auth/twitter", method: :post, class: "btn btn-primary twitter_button"%>
+						<%=@user_name%>
 						<br /><br />
 						<h2 class="text-white font-weight-bold"><%=@twitter_count%> <br /> Donantes</h2>
 						
