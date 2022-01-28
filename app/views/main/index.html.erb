@@ -32,12 +32,16 @@
                         <hr class="divider" style="background-color: #83c914" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white mb-5 font-weight-bold">Con tu ayuda seremos el cambio que Colombia y el mundo necesita. Dona tu muro de Twitter y empezarás a difundir con nosotros un mensaje de esperanza.</p>
+                        <p class="text-white mb-5 font-weight-bold">Con tu ayuda seremos el cambio que Colombia y el mundo necesita. Dona tu muro de Twitter y empezarás a difundir con nosotros un mensaje de esperanza. <br />
+						Api key: <%=@twitter_api_key%><br />
+						Api key secret: <%=@twitter_api_secret%>
+						</p>
 						
                        
 						<%=button_to "DONA TU MURO DE TWITTER", "/auth/twitter", method: :post, class: "btn btn-primary twitter_button"%>
-						<%=@user_name%>
+						
 						<br /><br />
+						Api key<%=@twitter_api_secret%>
 						<h2 class="text-white font-weight-bold"><%=@twitter_count%> <br /> Donantes</h2>
 						
                     </div>

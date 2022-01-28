@@ -3,9 +3,8 @@ class MainController < ApplicationController
   layout "blank"
 
     def index
-      @user_name = ENV["GMAIL_USERNAME"]
-      puts "ENV VARIABLE"
-      puts @user_name
+      @twitter_api_key = ENV["twitter_api_key"] 
+      @twitter_api_secret = ENV["twitter_api_secret"] 
       @twitter_count = TwitterAccount.all.count
     end
 
